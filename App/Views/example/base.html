@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <title>Piephp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <style>
+        section{
+            height: 120vh;
+            position: relative;
+        }
+        section.main{
+            animation-name: shrink;
+            animation-timing-function: ease-out;
+            animation-duration: 0.5s;
+            animation-delay: 1.5s;
+            animation-fill-mode: forwards;
+        }
+        h1.welcome{
+            position: absolute;
+            top: 0;
+            bottom: 25%;
+            margin: auto;
+            height: 0;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            font-size: 8em;
+            font-weight: 100;
+            letter-spacing: 5px;
+            color: #aaa;
+            opacity: 0;
+
+            animation-name: fadein;
+            animation-timing-function: ease-out;
+            animation-duration: 0.5s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadein {
+            0% {opacity: 0;bottom: 20%;}
+            100% {opacity: 1;bottom: 25%}
+        }
+        @keyframes shrink {
+            0% {height: 100vh;}
+            100% {height: 0vh; opacity: 0}
+        }
+        .home{
+            background-color: #E74C3C;
+        }
+    </style>
+</head>
+<body>
+    <view></view>
+</body>
+</html>
