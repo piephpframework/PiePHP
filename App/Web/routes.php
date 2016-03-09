@@ -25,9 +25,9 @@ use Application\Routes\Route;
 
 $app->web(function(Route $route){
     // An html view example
-    // $route->group(['shell' => 'example/base'], function($route){
+    $route->group(['shell' => 'example/shells/base'], function($route){
         $route->when('/', view('example/home'));
-    // });
+    });
 
     // A json example
     $route->when('/json', function(){
