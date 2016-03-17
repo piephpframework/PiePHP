@@ -23,6 +23,6 @@ $app->console(function(Console $console){
 
     // Start the application
     $console->listen(function(Console $console){
-        return response('Welcome to the Matrix!')->color('green');
+        return response('Welcome to the Matrix!')->color(ConsoleMessage::Green);
     }, '> ');
 });
