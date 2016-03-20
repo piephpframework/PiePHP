@@ -27,6 +27,8 @@ $app->web(function(Route $route){
     // An html view example
     $route->group(['shell' => 'example/shells/base'], function($route){
         $route->when('/', view('example/home'));
+
+        $route->when('/info', 'Info:main');
     });
 
     // A json example

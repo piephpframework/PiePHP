@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Information</h1>
+    <div class="row">
+        <div class="col-sm-3">Piephp Version</div>
+        <div class="col-sm-9" pi-scope="info.pieVersion"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">Piephp Version Name</div>
+        <div class="col-sm-9" pi-scope="info.pieVersionName"></div>
+    </div>
+    <div class="row" pi-repeat="people as name => info">
+        <div class="col-sm-3" pi-scope="name"></div>
+        <div class="col-sm-9" pi-repeat="info.animals as type">
+            <div class="row">
+                <div class="col-sm-12" pi-scope="type"></div>
+            </div>
+        </div>
+    </div>
+</div>
